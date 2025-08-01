@@ -22,7 +22,7 @@
       This should be the same across all pages.
      -->
     <link rel="icon" href="../assets/images/1311.png" />
-    <title>Donavon Clay</title>
+    <title>Unemployables Portfolio</title>
     <meta
       name="description"
       content="A portfolio template for the Unemployables community."
@@ -67,11 +67,11 @@
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-        <div class="main-title">6.900 - MITOSIS</div>
-        <div class="body-text"><i>It's getting hot in here...</i></div>
+        <div class="main-title">Physical MBTA Train Tracker v1</div>
+        <div class="body-text"><i>calling all transit nerds!</i></div>
         <image
           class="project-header-image"
-          src="../assets/images/mitosis-box.png"
+          src="../assets/images/train-tracker.JPEG"
         />
       </div>
 
@@ -86,48 +86,41 @@
         <div class="subheader-text">Project Details / Background</div>
         <div class="project-details-content">
           <div class="body-text">
-            For MIT's 6.900 Engineering for Impact class, my team was partnered
-            with MIT's Office of Sustainability (MITOS). The goal of the project
-            was to develop a set of low-cost, interconnected sensor nodes to be
-            placed across MIT’s campus to measure urban heat island effect. Our
-            team of 8 undergrads designed it over 12 weeks, focusing on accurate
-            temperature and humidity data, portability, low-power, and community
-            engagement through a web platform.
+            This was my final project for Harvard's PS70 Intro to Digital
+            Fabrication class. The process is (will be) documented more on my
+            website for that class, but to give a summary: I wanted to create
+            some sort of display that would show the real time locations of the
+            MBTA trains. Originally, I was going to go with simple LEDs, but I
+            was challenged to make the display mechanical :)
           </div>
           <div class="body-text">
-            <div class="inline-image-container-right">
-              <img
-                src="../assets/images/impact-heat-test.JPEG"
-                alt="Impact heat test setup"
-                class="inline-image-right"
-              />
-              <div class="image-caption">
-                Testing effect of enclosure on sensor accuracy with heat lamp
-              </div>
-            </div>
-            Learning from past iterations, we tailored our design to overcome
-            previous challenges, such as sensor accuracy, adding a stevenson
-            shield to mitigate the effects of internal heating on temperature
-            readings. We organized into subteams, and I led sensor specs and
-            testing, providing contributions to the firmware and industrial
-            design teams later in the project.
-            <br />
-            <br />
-            We enjoyed plenty of creative freedom, sourcing parts from Digikey,
-            Mouser, etc. to our liking, within budget limits. We did face tough
-            design challenges, such as omitting a wind-sensor due to cost,
-            power, and maintenance issues. Regular design reviews and client
-            feedback shaped our final product, ensuring it met MIT's needs
-            effectively.
+            The train location data is pulled from the MBTA's API, and the
+            trains are displayed on a laser-cut map of Boston/Cambridge. As you
+            can see, I actually narrowed the scope down to just a few stops on
+            the Red Line (Davis, Porter, Harvard, MIT). I felt I was pressed for
+            time, but it ended up working really well, so I probably could've
+            committed to the whole line or including other lines. Underneath the
+            map, a gantry system moves an electromagnet that powers on and off
+            to slide the trains to their location the map. I figured this was
+            the easiest and most cost-efficient way to move the trains around,
+            since the T isn't exactly known for its speed.
           </div>
-
           <div class="body-text">
-            I enjoyed the hands-on experience of designing a product from
-            scratch, collaborating with a diverse team, and applying engineering
-            principles to solve real-world problems. Throughout, I developed
-            both technical skills—like system modeling and PCB design—and
-            valuable soft skills in teamwork, problem-solving, and client
-            communication.
+            I programmed it using an ESP32, driving the gantry system with timer
+            pulley belts and stepper motors + drivers. Calibration was done with
+            limit switchesThe little train icons are 3d-printed, and they have a
+            magnet press-fit into them. Overall, a super fun project, got to use
+            plenty of the tools I learned throughout the semester (laser cutter,
+            3d printer, band saw, etc.). I really want to iterate over this
+            project in the future, creating a smaller, cheaper display that
+            actually includes the rest of the map. Maybe I could hang it up or
+            display it in my apartment. From there, maybe I'd look at adding the
+            commuter rail network or buses.
+            <br />
+            <br />
+            Check out this video below to see it in action!
+            <br />
+            <i> it might not be done yet, i still need to edit it...</i>
           </div>
         </div>
       </div>
@@ -162,29 +155,46 @@
             -->
           <div class="gallery-image-container half-width">
             <img
-              src="../assets/images/impact-oopsies.JPEG"
+              src="../assets/images/gantry-no-map.JPEG"
               class="gallery-image"
             />
             <span class="image-caption"
-              >when we didn't properly secure the enclosure and forgot to bring
-              it before a storm...</span
+              >earlier stage where moving the gantry system was tested. notice
+              the limit switches, the makeshift holder for the electromagnet,
+              and all the red trains in the back hehe</span
             >
           </div>
           <div class="gallery-image-container half-width">
             <img
-              src="../assets/images/impact-outside-setup-ppl.JPEG"
+              src="../assets/images/blue-trains.JPEG"
               class="gallery-image"
             />
             <span class="image-caption"
-              >setting up our first unit outside the EECS building!</span
+              >the plenty of blue line train bases i had prepared prior to scope
+              narrowing</span
             >
           </div>
-          <!-- <div class="gallery-image-container">
-            <img src="../assets/images/camera.jpeg" class="gallery-image" />
+          <div class="gallery-image-container half-width">
+            <img
+              src="../assets/images/stepper_mounts v3.png"
+              class="gallery-image"
+            />
             <span class="image-caption"
-              >Give your image a caption. People love context.</span
+              >3d model of the stepper motor + pulley mounts i designed,
+              together with a 30x60 aluminum t-slot</span
             >
-          </div> -->
+          </div>
+          <div class="gallery-image-container half-width">
+            <img
+              src="../assets/images/3d-print-map.JPEG"
+              class="gallery-image"
+            />
+            <span class="image-caption"
+              >before i transitioned to the wooden map, i had considered 3d
+              printing all segments of the map and sticking them together like
+              puzzle pieces, so i could capture building shapes too.</span
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -202,18 +212,6 @@
         href="https://instagram.com/donavon_c21"
       >
         <image src="../assets/icons/instagram.svg" class="footer-icon" />
-      </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <a
-        class="icon-link"
-        target="_blank"
-        href="https://instagram.com/donavon_c21"
-      >
-        <image src="../assets/icons/twitter.svg" class="footer-icon" />
       </a>
       <!-- 
         TODO - Change the email after "mailto" to your contact email 
