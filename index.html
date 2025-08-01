@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
     <!-- 
       TODO
@@ -14,24 +14,35 @@
       This should be the same across all pages.
      -->
     <link rel="icon" href="./assets/images/1311.png" />
-		<title>Unemployables Portfolio</title>
-    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <title>Donavon Clay</title>
+    <meta
+      name="description"
+      content="A portfolio template for the Unemployables community."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/utilities.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-		<script defer src="./js/script.js"></script>
-	</head>
-	<body>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
     <!-- NAVBAR -->
     <div class="navbar">
       <a class="nav-title-link" href="./index.html">
         <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        <span class="nav-title">Portfolio Title</span>
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="mailto:whitevans.eth@gmail.com">
+        <span class="nav-title">Donavon Clay</span>
+        <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <a class="button" href="mailto:donavon.clay21@gmail.com">
           <span class="button-text">Contact Me</span>
         </a>
       </a>
@@ -39,24 +50,39 @@
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
-
       <!-- PORTFOLIO HEADER -->
       <div id="portfolio-header">
         <div id="portfolio-header-image-container">
-          <!-- 
-            TODO
-
-            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
-            - Change the number to point to your Unemployable & replace the OpenSea link with your own
-            - If you aren't using an Unemployable as your image, remove the entire "a" element
-          -->
-          <img src="./assets/images/1311.png" class="portfolio-header-image">
-          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
-            <span class="image-caption">Unemployables #1311</span>
-          </a>
+          <div class="image-slideshow">
+            <img
+              src="./assets/images/Image-1.jpg"
+              class="portfolio-header-image active"
+              alt="Portfolio Image 1"
+            />
+            <img
+              src="./assets/images/Image-2.jpg"
+              class="portfolio-header-image"
+              alt="Portfolio Image 2"
+            />
+            <img
+              src="./assets/images/Image-3.jpg"
+              class="portfolio-header-image"
+              alt="Portfolio Image 3"
+            />
+            <img
+              src="./assets/images/Image-4.jpg"
+              class="portfolio-header-image"
+              alt="Portfolio Image 4"
+            />
+            <img
+              src="./assets/images/Image-5.jpg"
+              class="portfolio-header-image"
+              alt="Portfolio Image 5"
+            />
+          </div>
         </div>
 
-          <!-- 
+        <!-- 
             TODO
 
             - Change the main-title to whatver you want
@@ -64,14 +90,43 @@
             - Edit the button text if you feel like it. It will link to the projects section below.
           -->
         <div id="portfolio-header-text-container">
-            <div class="header-text">
-              <span class="main-title">Hey, I'm @ndoherty_eth.</span>
-              <div class="body-text">I’m a freelance designer and developer who aims to help other creatives build out their portfolios, skillset, and businesses.</div>
-            </div>
-            <a class="button" id="my-work-link">
-              <span class="button-text">Check out my projects</span> 
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
+          <div class="header-text">
+            <span class="main-title">hey! i'm donavon :)</span>
+            <!-- <div class="body-text">
+              I’m a freelance designer and developer who aims to help other
+              creatives build out their portfolios, skillset, and businesses.
+            </div> -->
+          </div>
+          <div class="body-text">
+            After what might've been four of the best years of my life, I've
+            just recently graduated from MIT with my B.S in Electrical
+            Engineering and Computer Science. My professional interests center
+            around developing embedded systems and IoT devices, and I'd
+            particularly like to focus on their applications in smart cities,
+            the built environment, and medical devices.
+          </div>
+          <div class="body-text">
+            Currently, I'm spending the summer in Belfast at Queen's University
+            Belfast via MIT's MISTI program, where I'm helping with hardware
+            implementation and acceleration of TPG classifiers for applications
+            in ECG and retinomorphic signal processing.
+          </div>
+
+          <div class="body-text">
+            I'm from San Antonio, TX, though I've moved around quite a bit over
+            the years due to my parents being in the military. I've grown to
+            welcome the change, and I love meeting new people and experiencing
+            new places! In my free time, you can find me playing volleyball,
+            basketball, board games, video games, hanging with friends and
+            family, or enjoying a strawberry smoothie.
+          </div>
+          <a class="button" id="my-work-link">
+            <span class="button-text">Check out my projects</span>
+            <image
+              src="./assets/icons/arrow-right.svg"
+              class="right-arrow-icon"
+            />
+          </a>
         </div>
       </div>
 
@@ -83,10 +138,255 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
       -->
       <div id="about-section">
-        <span class="subheader-text">My Background / About Me</span>
-        <div class="about-section-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+        <span class="subheader-text">Background and Experience</span>
+        <div class="timeline-container">
+          <!-- Work Experience Column -->
+          <div class="timeline-column">
+            <div class="timeline-header">
+              <svg
+                class="timeline-icon"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"
+                />
+              </svg>
+              <h3 class="timeline-title">Work Experience</h3>
+            </div>
+            <div class="timeline-items">
+              <!-- Example work item - replace with your actual experience -->
+              <div class="timeline-item">
+                <div class="timeline-date">June 2025 - Present</div>
+                <div class="timeline-content-wrapper">
+                  <!-- Queen's University Belfast logo -->
+                  <img
+                    class="company-icon"
+                    src="./assets/icons/qub.png"
+                    alt="QUB Logo"
+                  />
+                  <div class="timeline-content">
+                    <h4 class="timeline-item-title">Research Assistant</h4>
+                    <p class="timeline-company">
+                      Queen's University Belfast |
+                      <i
+                        >Institute of Electronics, Communications and
+                        Information Technology</i
+                      >
+                    </p>
+                    <p class="timeline-description">
+                      Hardware implementation and acceleration of TPG
+                      classifiers for ECG and retinomorphic signal processing
+                      applications.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more work items here -->
+              <div class="timeline-item">
+                <div class="timeline-date">September 2024 - January 2025</div>
+                <div class="timeline-content-wrapper">
+                  <!-- MIT icon placeholder -->
+                  <img
+                    class="company-icon"
+                    src="./assets/icons/rle.gif"
+                    alt="QUB Logo"
+                  />
+                  <div class="timeline-content">
+                    <h4 class="timeline-item-title">
+                      Undergraduate Researcher
+                    </h4>
+                    <p class="timeline-company">
+                      MIT Research Laboratory of Electronics | <i>Lewis Lab</i>
+                    </p>
+                    <p class="timeline-description">
+                      Worked on an open-sourced EEG headband system with
+                      closed-loop auditory stimulation for home-based
+                      neuromodulation sleep studies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">June 2024 - August 2024</div>
+                <div class="timeline-content-wrapper">
+                  <img
+                    class="company-icon"
+                    src="./assets/icons/meraki.png"
+                    alt="Meraki Logo"
+                  />
+                  <div class="timeline-content">
+                    <h4 class="timeline-item-title">
+                      Firmware Engineering Intern
+                    </h4>
+                    <p class="timeline-company">
+                      Cisco Meraki | <i>MX SDWAN</i>
+                    </p>
+                    <p class="timeline-description"></p>
+                    <ul class="timeline-bullets">
+                      <li>
+                        Enhanced a network path monitoring tool using C++ to
+                        support feature development for multiple teams.
+                      </li>
+                      <li>
+                        Delivered rapid bug fixes for critical customer deals
+                        and increased test coverage with new unit and
+                        integration tests (C++ and Python)
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">June 2023 - August 2023</div>
+                <div class="timeline-content-wrapper">
+                  <img
+                    class="company-icon"
+                    src="./assets/icons/slack.png"
+                    alt="Slack Logo"
+                  />
+                  <div class="timeline-content">
+                    <h4 class="timeline-item-title">
+                      Software Engineering Intern
+                    </h4>
+                    <p class="timeline-company">
+                      Slack | <i>Data Ingestion</i>
+                    </p>
+                    <p class="timeline-description">
+                      Read
+                      <a
+                        href="https://slack.engineering/unleashing-impact-at-slacks-data-engineering-internship/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >this article</a
+                      >
+                      about my intern experience in the Data Engineering org!
+                    </p>
+                    <ul class="timeline-bullets">
+                      <li>
+                        Developed SQL queries to populate a dashboard
+                        visualizing data pipeline performance, enabling
+                        proactive management for engineering teams.
+                      </li>
+                      <li>
+                        Automated data extraction and ingestion by querying a
+                        RESTful API using Python and SQL, processing JSON data,
+                        and scheduling tasks with Apache Airflow into an
+                        S3-based data warehouse.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Column -->
+          <div class="timeline-column">
+            <div class="timeline-header">
+              <svg
+                class="timeline-icon"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"
+                />
+              </svg>
+              <h3 class="timeline-title">Education</h3>
+            </div>
+            <div class="timeline-items">
+              <!-- Example education item - replace with your actual education -->
+              <div class="timeline-item">
+                <div class="timeline-date">September 2021 - May 2025</div>
+                <div class="timeline-content-wrapper">
+                  <!-- MIT icon placeholder -->
+                  <img
+                    class="company-icon"
+                    src="./assets/icons/mit.png"
+                    alt="MIT Logo"
+                  />
+                  <div class="timeline-content">
+                    <h4 class="timeline-item-title">
+                      B.S. Electrical Engineering and Computer Science
+                    </h4>
+                    <p class="timeline-company">
+                      Massachusetts Institute of Technology
+                    </p>
+                    <p class="timeline-description"></p>
+                    <ul class="timeline-bullets">
+                      <li><b>GPA:</b> 4.8/5.0</li>
+                      <li>
+                        <b>Favorite Classes:</b> Embedded Systems, Digital
+                        Systems Lab, Systems and Controls, Microcomputer Project
+                        Lab, Digital Fabrication, Data Science for Cities,
+                        Engineering for Impact
+                      </li>
+                      <li>
+                        <b>Organizations:</b> National Society of Black
+                        Engineers, Society of Hispanic Professional Engineers,
+                        Undergraduate Student Advisory Group in EECS, Club
+                        Volleyball, Eta Kappa Nu (IEEE-HKN), Zeta Psi
+                      </li>
+                      <li>
+                        <b>Undergraduate Teaching:</b>
+                        <ul>
+                          <li>
+                            Lab Assistant for 6.1903/4 Introduction to C &
+                            Assembly, Spring 2025
+                          </li>
+                          <li>
+                            Lab Assistant for 6.2000 Introduction to Circuits,
+                            Fall 2024
+                          </li>
+                          <li>
+                            Lab Assistant for 6.100A/B Introduction to Python,
+                            Spring 2023
+                          </li>
+                          <li>
+                            Teaching Assistant/Grader for 8.02 Physics II:
+                            Electricity & Magnetism, Spring 2022 -- Spring 2024
+                          </li>
+                          <li>
+                            Lab Assistant for 6.A01 First-Year Illuminations
+                            Seminar, Fall 2022
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Imperial College London -->
+              <div class="timeline-item">
+                <div class="timeline-date">October 2023 - March 2024</div>
+                <div class="timeline-content-wrapper">
+                  <!-- Imperial College London logo -->
+                  <img
+                    class="company-icon"
+                    src="./assets/icons/imperial.png"
+                    alt="Imperial College London Logo"
+                  />
+                  <div class="timeline-content">
+                    <h4 class="timeline-item-title">Exchange Year</h4>
+                    <p class="timeline-company">Imperial College London</p>
+                    <p class="timeline-description">
+                      Hosted by the Department of Electrical and Electronic
+                      Engineering
+                    </p>
+                    <ul class="timeline-bullets">
+                      <li>
+                        <b>Favorite Classes:</b> Biomedical Electronics,
+                        Human-Centered Robotics, Computer Vision & Pattern
+                        Recognition, The Science of Learning
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more education items here -->
+            </div>
+          </div>
         </div>
       </div>
 
@@ -119,36 +419,64 @@
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
           <div class="project-card">
-            <img src="./assets/images/desktop.jpeg" class="project-image">
+            <img src="./assets/images/mitosis-box.png" class="project-image" />
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">6.900 - MITOSIS</div>
+              <div class="body-text project-card-text">
+                Environmental sensing units developed for MIT's Office of
+                Sustainability, aiding in urban heat island research in a team
+                of 8 for MIT's 6.900 class.
+              </div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
+            <a class="button" href="./project-pages/mitosis.html">
               <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              <image
+                src="./assets/icons/arrow-right.svg"
+                class="right-arrow-icon"
+              />
             </a>
           </div>
           <div class="project-card">
-            <img src="./assets/images/code.jpeg" class="project-image">
+            <img
+              src="./assets/images/train-tracker.JPEG"
+              class="project-image"
+            />
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">
+                Physical MBTA Tracker v1
+              </div>
+              <div class="body-text project-card-text">
+                A mechanical display of the MBTA's real-time train data, using
+                2-D gantry with NEMA steppers, magnets, and an ESP32 for
+                Harvard's PS70 Intro to Digital Fabrication.
+              </div>
             </div>
             <a class="button" href="./project-pages/project-template.html">
               <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              <image
+                src="./assets/icons/arrow-right.svg"
+                class="right-arrow-icon"
+              />
             </a>
           </div>
           <div class="project-card">
-            <img src="./assets/images/sketchbook.jpeg" class="project-image">
+            <img
+              src="./assets/images/super-sync-backstage.JPEG"
+              class="project-image"
+            />
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">2.00B - Super Sync</div>
+              <div class="body-text project-card-text">
+                A children's 2v2 reaction-based game developed in a team of 5
+                for MIT's 2.00B Toy Product Design class.
+              </div>
             </div>
             <a class="button" href="./project-pages/project-template.html">
               <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              <image
+                src="./assets/icons/arrow-right.svg"
+                class="right-arrow-icon"
+              />
             </a>
           </div>
         </div>
@@ -162,26 +490,33 @@
 
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
+      <a
+        class="icon-link"
+        target="_blank"
+        href="https://instagram.com/donavon_c21"
+      >
+        <image src="./assets/icons/instagram.svg" class="footer-icon" />
       </a>
       <!-- 
         TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
+      <a
+        class="icon-link"
+        target="_blank"
+        href="https://twitter.com/whitevans_eth"
+      >
+        <image src="./assets/icons/twitter.svg" class="footer-icon" />
       </a>
       <!-- 
         TODO - Change the email after "mailto" to your contact email 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      <a class="icon-link" href="mailto:donavon.clay21@gmail.com">
+        <image src="./assets/icons/mail.svg" class="footer-icon" />
       </a>
     </div>
-
-	</body>
+  </body>
 </html>
